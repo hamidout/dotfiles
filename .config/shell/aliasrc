@@ -34,7 +34,13 @@ alias \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	z="zathura"
+	z="zathura" \
+	upower="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep energy" \
+	gua="git remote | xargs -L1 git push --all" \
+	vncoa="ssh -L 5901:127.0.0.1:5901 -C -N -l hamid outabounte.xyz" \
+	vncoaa="ssh -L 5902:127.0.0.1:5902 -C -N -l hamid outabounte.xyz" \
+	vncoaaa="ssh -L 5903:127.0.0.1:5903 -C -N -l hamid outabounte.xyz" \
+	rmail="st -e "pass init hamid@hamidout.xyz" && st -e "mw -Y""
 
 alias \
 	magit="nvim -c MagitOnly" \
